@@ -8,7 +8,6 @@ html, body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
 }
 
 .popup {
@@ -69,4 +68,16 @@ button {
     background-color: rgba(0, 0, 0, 0);
     color: rgba(190, 190, 190, 0.8);
     font-size: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    html, body {
+        background-size: contain;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    html, body {
+        background-size: contain;
+    }
 }
