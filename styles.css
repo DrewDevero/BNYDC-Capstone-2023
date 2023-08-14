@@ -8,6 +8,7 @@ html, body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    transition: all 0.25s linear;
 }
 
 .popup {
@@ -70,14 +71,14 @@ button {
     font-size: 2rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     html, body {
-        background-size: contain;
+        background: url(B_champagne_background_mobile.png) no-repeat center center fixed;
     }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 800px) {
     html, body {
-        background-size: contain;
+        background: url(B_champagne_background_mobile.png) no-repeat center center fixed;
     }
 }
