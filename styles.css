@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url(B_champagne_background.png) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    right: -100%; /* Initially hidden off the screen */
+    background-color: #f2f2f2;
+    padding: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transition: right 0.5s ease;
+    -webkit-transition: right 0.5s ease;
+    -moz-transition: right 0.5s ease;
+    -o-transition: right 0.5s ease;
+}
+#champagnePopup {
+    background-color: rgba(0, 0, 0, 0);
+}
+.scale-it {
+    transform: scale(1.0);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.scale-it:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.popup-content {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+#openPopup {
+    border: none;
+    outline: none;
+    position: relative;
+    top: 1.75rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#closePopup {
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(190, 190, 190, 0.8);
+    font-size: 2rem;
+}
