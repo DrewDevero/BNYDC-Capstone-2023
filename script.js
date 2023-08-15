@@ -4,6 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const champagnePopup = document.getElementById("champagnePopup");
     const text = document.getElementById('curved-text')
 
+    const curveThis = new CircleType(text)
+    .radius(325);
+
+    window.addEventListener('resize', () => {
+        curveThis.radius(curveThis.element.offsetWidth / 2);
+    });
+
     openPopupBtn.addEventListener("click", function() {
         champagnePopup.style.right = "0"; // Move the popup into view from the right
     });
@@ -25,12 +32,5 @@ document.addEventListener("DOMContentLoaded", function() {
             champagnePopup.style.right = "-100%";
         }
       });
-
-    const curveThis = new CircleType(text)
-        .radius(325);
-
-    window.addEventListener('resize', () => {
-        curveThis.radius(curveThis.element.offsetWidth / 2);
-    });
 
 });

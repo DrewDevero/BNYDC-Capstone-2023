@@ -74,7 +74,6 @@ button {
 }
 
 #curved-text {
-    text-decoration: underline;
     text-transform: capitalize;
     transform: rotateZ(-45deg);
     position: absolute;
@@ -91,5 +90,8 @@ button {
     }
     #closePopup {
         height: calc(50%) !important;
+    }
+    #curved-text {
+       display: none; 
     }
 }
