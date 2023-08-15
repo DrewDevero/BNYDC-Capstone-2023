@@ -91,7 +91,5 @@ button {
     #closePopup {
         height: calc(50%) !important;
     }
-    #curved-text {
-       display: none; 
-    }
+    
 }
