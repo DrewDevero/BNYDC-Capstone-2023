@@ -76,4 +76,7 @@ button {
         background: url(B_champagne_background_mobile.png) no-repeat center center fixed;
         background-size: contain;
     }
+    #closePopup {
+        height: calc(50%) !important;
+    }
 }
