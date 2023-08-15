@@ -1,18 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const openPopupBtn = document.getElementById("openPopup");
     const closePopupBtn = document.getElementById("closePopup");
     const champagnePopup = document.getElementById("champagnePopup");
-    const text = document.getElementById('curved-text')
+    const text = document.getElementById('curved-text');
+    const textTwo = document.getElementById('curved-text-two');
 
     const curveThis = new CircleType(text)
-    .radius(325);
+        .radius(325);
 
     window.addEventListener('resize', () => {
         curveThis.radius(curveThis.element.offsetWidth / 2);
     });
 
-    openPopupBtn.addEventListener("click", function() {
-        champagnePopup.style.right = "0"; // Move the popup into view from the right
+    const curveThisTwo = new CircleType(textTwo)
+        .radius(325);
+
+    window.addEventListener('resize', () => {
+        curveThisTwo.radius(curveThisTwo.element.offsetWidth / 2);
     });
 
     closePopupBtn.addEventListener("click", function() {

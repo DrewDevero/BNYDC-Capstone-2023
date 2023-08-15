@@ -55,15 +55,7 @@ html, body {
 button {
     cursor: pointer;
 }
-#openPopup {
-    border: none;
-    outline: none;
-    position: relative;
-    top: 1.75rem;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+
 #closePopup {
     text-transform: uppercase;
     border: none;
@@ -83,6 +75,17 @@ button {
     color: #ffacac
 }
 
+#curved-text-two {
+    text-transform: capitalize;
+    transform: rotateZ(-45deg);
+    position: absolute;
+    left: -13rem;
+    top: 4rem;
+    text-shadow: 2px 2px 4px #000;
+    color: #ffacac;
+    display: none;
+}
+
 @media screen and (max-width: 500px) {
     html, body {
         background: url(B_champagne_background_mobile.png) no-repeat center center fixed;
@@ -90,6 +93,12 @@ button {
     }
     #closePopup {
         height: calc(50%) !important;
+    }
+    #curved-text {
+        display: none;
+    }
+    #curved-text-two {
+        display: block;
     }
     
 }
