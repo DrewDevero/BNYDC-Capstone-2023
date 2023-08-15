@@ -30,6 +30,14 @@ html, body {
 #champagnePopup {
     background-color: rgba(0, 0, 0, 0);
 }
+
+.popup-content {
+    margin: auto;
+}
+.curved-container {
+    margin: auto;
+    position: relative;
+}
 .scale-it {
     transform: scale(1.0);
     transition: all 0.5s ease-in-out;
@@ -44,11 +52,6 @@ html, body {
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
-
-.popup-content {
-    text-align: center;
-}
-
 button {
     cursor: pointer;
 }
@@ -68,6 +71,17 @@ button {
     background-color: rgba(0, 0, 0, 0);
     color: rgba(190, 190, 190, 0.8);
     font-size: 2rem;
+}
+
+#curved-text {
+    text-decoration: underline;
+    text-transform: capitalize;
+    transform: rotateZ(-45deg);
+    position: absolute;
+    left: -13rem;
+    top: 4rem;
+    text-shadow: 2px 2px 4px #000;
+    color: #ffacac
 }
 
 @media screen and (max-width: 500px) {
