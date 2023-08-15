@@ -4,7 +4,6 @@ html, body {
     font-family: Arial, sans-serif;
     background: url(B_champagne_background.png) no-repeat center center fixed;
     background-size: cover;
-    overflow-y: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -73,7 +72,7 @@ button {
 
 @media screen and (max-width: 500px) {
     html, body {
-        background: url(B_champagne_background_mobile.png) no-repeat center top fixed;
+        background: url(B_champagne_background_mobile.png) no-repeat center center fixed;
         background-size: cover;
     }
     #closePopup {
